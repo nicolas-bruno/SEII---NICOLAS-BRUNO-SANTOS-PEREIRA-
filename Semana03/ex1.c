@@ -30,28 +30,11 @@ int main() {
 
     printf("o produto eh %f + (%f)i\n", m.real, m.imag);
 
+  m.real = x.real/y.real - x.imag*y.imag;
+  m.imag = x.real/y.imag + x.imag*y.real;
 
     printf("a divisao eh %f + (%f)i\n", m.real, m.imag);
 
-
-float m, // módulo
-      f, // fase
-      x, // parte real
-      y; // parte imaginária
-
-cout << “Modulo = “; cin >> m;
-cout << “Fase = “; cin >> f;
-
-f=f*M_PI/180;
-x=m*cos(f);
-y=m*sin(f);
-
-cout << x << ” + j” << y;
-  m.real = x.real/y.real - x.imag/y.imag;
-  m.imag = x.real/y.imag + x.imag/y.real;
-
-    printf("a forma polar eh %f + (%f)i\n", m.real, m.imag);
-  
 
   x.imag = -x.imag;
   y.imag = -y.imag;
