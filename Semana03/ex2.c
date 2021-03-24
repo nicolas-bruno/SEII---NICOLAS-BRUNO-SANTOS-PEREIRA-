@@ -8,23 +8,15 @@ int main(int argc,char **argv)
    int max = 1000;
 
    printf("Abrindo carregando arquivo...\n");
-
-
    source = fopen(argv[1], "r");
-
    aloc = (char *) malloc(max * sizeof(char));
-
 
    if (source == NULL)
    {
       printf("falha, aperte qualquer tecla para fechar...\n");
       exit(EXIT_FAILURE);
    }
-
    target = fopen(argv[2], "w");
-
-
-
    if (target == NULL)
    {
       fclose(source);
