@@ -1,0 +1,28 @@
+body,
+html {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f2f3f3;
+}
+
+table,
+td,
+th {
+    border: 1px solid green;
+    width: 100%;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #854040;
+    color box-shadow: ;
+    justify-content: center;
+    align-self: center;
+}
+
+.content {
+    margin: 0 auto;
+    width: 400px;
+    align-content: space-between;
+}
