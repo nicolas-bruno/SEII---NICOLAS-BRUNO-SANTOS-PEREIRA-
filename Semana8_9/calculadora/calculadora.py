@@ -1,5 +1,4 @@
 from PyQt5.QtWidgets import *
-import PyQt5.QtWidgets as qtw
 from PyQt5 import QtCore, QtGui
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
@@ -22,7 +21,7 @@ class Window(QMainWindow):
         self.label.setStyleSheet("QLabel"
                                  "{"
                                  "border : 4px solid black;"
-                                 "background : white;"
+                                 "background : red;"
                                  "}")
         self.label.setAlignment(Qt.AlignRight)
         self.label.setFont(QFont('Times New Roman', 15))
@@ -102,11 +101,11 @@ class Window(QMainWindow):
   
     def action_div(self):
         text = self.label.text()
-        self.label.setText(text + " / ")
+        self.label.setText(text + " * ")
   
     def action_mul(self):
         text = self.label.text()
-        self.label.setText(text + " * ")
+        self.label.setText(text + " / ")
   
     def action_point(self):
         text = self.label.text()
@@ -162,5 +161,4 @@ class Window(QMainWindow):
 
 App = QApplication(sys.argv)
 window = Window()
-App.setStyle(qtw.QStyleFactory.create('fusion'))
 sys.exit(App.exec())
